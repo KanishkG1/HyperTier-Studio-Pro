@@ -1,0 +1,26 @@
+===============================================================================
+HYPER-TIER STUDIO | PROFESSIONAL USER MANUAL
+===============================================================================
+SITEMAP:
+- launch.py : The entry point. Checks AI status and launches the Studio.
+- main.py : The core application executor.
+- studio/ : The package containing GUI, Engine, and Metrics.
+- requirements.txt : Dependencies for the environment.
+-------------------------------------------------------------------------------
+1. SETUP GUIDE
+A. Environment Setup:
+   1. Open terminal in project folder.
+   2. Run: python -m venv venv
+   3. Run: .\venv\Scripts\activate
+   4. Run: pip install -r requirements.txt
+B. AI Integration (Ollama):
+   1. Install Ollama from ollama.com
+   2. Run: ollama run phi3:mini
+-------------------------------------------------------------------------------
+2. HOW TO USE
+- Run the app via: python launch.py
+- Load a CSV or OBB file.
+- Use the AI Assistant to ask questions in natural language.
+- Use Manual Filter for specific logic.
+- Use 'Convert to Parquet' for industrial-grade read speeds.
+===============================================================================
