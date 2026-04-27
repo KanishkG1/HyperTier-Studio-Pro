@@ -3,7 +3,7 @@
 
 <div align="center">
 
-# 🚀 Hyper-Tier Studio
+#  Hyper-Tier Studio
 ### *High-Performance Local Data Processing & AI-SQL Interface*
 
 ![Status](https://img.shields.io/badge/Status-Experimental-blue)
