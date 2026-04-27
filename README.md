@@ -1,6 +1,3 @@
-Since you love the **exact visual structure** of that "Pro" version, I have transplanted all your honest technical details, your legacy hardware specs, and the "Processing vs. Viewing" distinction into that specific high-impact layout.
-
-This version gives you the **premium look** you want, but with the **honest engineering** that makes you look competent to other developers.
 
 ---
 
