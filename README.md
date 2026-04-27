@@ -1,5 +1,5 @@
+<div align="center">
 🚀 Hyper-Tier Studio
-
 High-Performance Local Data Processing & AI-SQL Interface
 
 Status Engine AI
