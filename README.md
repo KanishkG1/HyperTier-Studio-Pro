@@ -44,7 +44,7 @@ To prove that high-performance data engineering is a result of **architecture** 
 | :--- | :--- | :--- | :--- |
 | **NYC Yellow Taxi (Jan 2015)** | **12,748,986** | **~2.1 GB** | **3m 30s** |
 
-> **Engineer's Note:** The primary bottleneck during this test was the SATA interface bandwidth of the secondary SSD, not the CPU or RAM. This confirms that columnar processing is incredibly efficient even on decade-old hardware.
+> **Note:** The primary bottleneck during this test was the SATA interface bandwidth of the secondary SSD, not the CPU or RAM. This confirms that columnar processing is incredibly efficient even on decade-old hardware.
 
 ---
 
