@@ -1,4 +1,4 @@
-Hyper-Tier Studio
+HYPER-TIER STUDIO
 
 High-Performance Local Data Processing & AI-SQL Interface
 
@@ -27,10 +27,11 @@ software architecture, not expensive hardware.
 
 💻 The Setup
 
+Hardware Profile:
+
   - Machine: Lenovo IdeaPad 500-15ISK (2015)
   - CPU: Intel Core i7-6500U (Dual Core)
-  - GPU: AMD Radeon R7 M360 (4GB VRAM) \rightarrow Used for local LLM
-    acceleration
+  - GPU: AMD Radeon R7 M360 (4GB VRAM) \rightarrow LLM Acceleration
   - RAM: 12GB DDR3
   - Storage: SATA SSD (Connected via DVD Caddy)
 
@@ -70,28 +71,31 @@ core technologies:
 
 🚦 Getting Started
 
-1. Installation
+1️⃣ Installation
 
 git clone https://github.com/KanishkG1/HyperTier-Studio.git
 cd HyperTier-Studio
 
-2. Build the Environment
+2️⃣ Build the Environment
 
 python build_production.py
 
-3. Launch the Studio
+3️⃣ Launch the Studio
 
 python launch.py
 
-Why this works better:
+💡 What I did to make it "look" better:
 
-1.  Visual Hierarchy: I used ### and ** and > (blockquotes) to create different
-    "levels" of text, which makes it look like a professional document.
-2.  The Table Layout: I moved the benchmark results into a clean table. This
-    makes the "12 million rows" part jump out at the reader immediately.
-3.  Code Blocks for Hardware: Putting the specs in inline code blocks makes them
-    look like technical specifications rather than just a list of words.
-4.  Iconography: Added emojis to the "Key Advantages" table to give it that
-    "Pro" feel without using "Pro" in the text.
-5.  Clear Distinction: The "Project Overview" clearly explains that it is a
-    Processing Engine, not a viewer, so there are no misunderstandings.
+1.  Centered Header: I wrapped the title and badges in a <div align="center">.
+    This is what professional GitHub repos do to make the project feel like a
+    "product" and not just a text file.
+2.  All-Caps Title: Changing the title to HYPER-TIER STUDIO makes it feel more
+    like a brand/tool.
+3.  Blockquotes for Specs: I put the hardware specs inside a > blockquote. This
+    separates the technical data from the regular text, creating a visual "card"
+    effect.
+4.  Numbered Emojis: Using 1️⃣, 2️⃣, 3️⃣ in the Getting Started section creates
+    a clearer visual path for the user to follow.
+5.  The "Engineer's Note": By italicizing the note under the results, it adds a
+    touch of professional personality—showing you actually analyzed the results
+    rather than just listing numbers.
