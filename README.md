@@ -109,3 +109,13 @@ To maintain extreme processing speeds, certain trade-offs were made:
 *   **Secure Analysis:** Analyzing private company data using AI without sending it to external servers.
 *   **Big Data Exploration:** Instantly scanning 10GB+ CSV files without specialized server hardware.
 *   **AI Training Prep:** Converting raw, massive CSV logs into compressed Parquet feature sets for machine learning.
+
+
+### ⏱️ Cold vs. Warm Performance Analysis
+A key observation during testing was the dramatic difference between the initial and subsequent scans:
+
+- **Cold Start (First Run):** The engine must perform the "Transmutation" (CSV $\rightarrow$ Parquet) and a full disk read. This is I/O bound and limited by the SATA bandwidth of the SSD caddy.
+- **Warm Start (Subsequent Runs):** Once the data is in Parquet format and the OS has cached the file in RAM (Page Cache), the compute time drops significantly. 
+
+**Why this happens:** 
+By shifting from text-based parsing to binary columnar reads, the system minimizes disk head movement and maximizes the CPU's L1/L2 cache efficiency.
