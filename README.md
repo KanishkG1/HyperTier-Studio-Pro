@@ -115,6 +115,15 @@ To maintain extreme processing speeds, certain trade-offs were made:
 A key observation during testing was the dramatic difference between the initial and subsequent scans:
 
 - **Cold Start (First Run):** The engine must perform the "Transmutation" (CSV $\rightarrow$ Parquet) and a full disk read. This is I/O bound and limited by the SATA bandwidth of the SSD caddy.
+
+
+## License
+
+This project is proprietary.
+
+Copyright © 2026 Kanishk Gulati.
+
+All Rights Reserved. No permission is granted to copy, modify, or redistribute any part of this project without prior written permission.
 - **Warm Start (Subsequent Runs):** Once the data is in Parquet format and the OS has cached the file in RAM (Page Cache), the compute time drops significantly. 
 
 **Why this happens:** 
